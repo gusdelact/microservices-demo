@@ -1,3 +1,4 @@
+cat <<EOF >./deploy/kubernetes/final.yaml
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -650,3 +651,4 @@ spec:
     targetPort: 80
   selector:
     name: user
+EOF
