@@ -20,7 +20,7 @@ spec:
         app: prometheus
     spec:
       securityContext:
-        runAsUser: 0
+        runAsUser: 1000130001
       serviceAccount: prometheus
       containers:
       - name: prometheus
