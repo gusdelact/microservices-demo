@@ -20,8 +20,9 @@ spec:
         app: prometheus
     spec:
       securityContext:
-        runAsUser: 1000130001
-      serviceAccount: prometheus
+        runAsUser: 0
+      serviceAccount: useroot
+      serviceAccountName: useroot
       containers:
       - name: prometheus
         image: prom/prometheus:v1.5.2
